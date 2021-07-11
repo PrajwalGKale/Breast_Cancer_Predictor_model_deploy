@@ -109,4 +109,5 @@ def submit():
     return render_template("submit.html",pred = prediction_cancer,cancer_img = img,bg = Bimg,favicon =fav)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.debug = True
+    app.run()
