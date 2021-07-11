@@ -106,7 +106,8 @@ def submit():
             img = os.path.join(app.config['UPLOAD_FOLDER'],'Benign.jpg')
     Bimg = os.path.join(app.config['UPLOAD_FOLDER'],'BgImg.jpg')
     #.py -> html
-    return render_template("submit.html",pred = prediction_cancer,cancer_img = img,bg = Bimg,favicon =fav)
+    return render_template("submit.html",pred = prediction_cancer,cancer_img = img,bg = Bimg)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.debug = True
+    app.run()
