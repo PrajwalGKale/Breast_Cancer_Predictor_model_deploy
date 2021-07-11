@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <link rel="icon" href="{{favicon}}" type="image/png"  sizes="19x16">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutME</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+ 
+<style>
+
+/* header */
+  * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(160, 155, 155); */
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* .form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
+/* header */
+
+
+/* body_styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+  padding: 0 8px;
+}
+
+/* .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+} */
+
+
+.card{
+     width: 20%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     position: absolute;
+     background-color: #546A85;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin-left: 39%;
+     margin-top: 2%;
+    }
+.matter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+/* .container {
+  padding: 0 16px; 
+  background-color: #474e5d;
+} */
+
+/* .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.title {
+  letter-spacing: 2px;
+  font-size: large;
+  color: #D6DBDF;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column1 {
+    width: 100%;
+    display: block;
+  }
+}
+.only4c{
+  background-color: #546A85;
+}
+/*social*/
+.Gmail {
+  padding: 5px;
+  padding-right: 5px;
+  font-size: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.Linkedin{
+  padding: 5px;
+  padding-left: 5px;
+  font-size: 10px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+/* Add a hover effect if you want */
+.Gmail:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.Gmail {
+  background: #AB3636 ;
+  color: white;
+}
+
+/* Twitter */
+.Linkedin{
+  background: #55ACEE;
+  color: white;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  }
+.fa{font-size: 26px;}
+.link{position: relative; left: 2px;
+  justify-content: center;
+color:#71BCFE;}
+.mail{color:#D6827B ;
+  top: 3px;
+  justify-content: center;
+  position: relative;
+  right:15px;}
+.myname{color: #AE9B6A ; font-size: 25px;letter-spacing: 1px;}
+.heart{color:#CF3A3A ;}
+.madewith{color: #AE9B6A ;flex-direction: row;}
+.flask{position: relative;top: 5px;}
+.eda{ position: absolute;
+  color: grey;
+  left: 150px;}
+  .aboutme{color: #A19D8A;margin-right:20px;}
+  .background{background-color: whitesmoke;}
+/*social*/
+</style>
+
+</head>
+<body>
+
+  <div class="header">
+    <a href="#default" class="logo">Breast Cancer Prediction</a>
+    <div class="header-right">
+      <a href="/">Home</a>
+      <a href="/second">Prediction</a>
+      <a class="active" href="/third">About</a>
+    </div>
+  </div>
+ 
+  <div class="about-section">
+    <h1>Breast Cancer predictor</h1>
+    <p>Prediction of Breast Cancer using Machine Learning Algorithm Random Forest classifier with 99.3% accuracy</p>
+    <p>I create Project in Machine Learning , Using the Breast Cancer Wisconsin (Diagnostic) 
+      Dataset,and create an classifier that can help diagnose patients and predict 
+      the of a breast cancer. 
+      <br>In this Project, Random Forest classifier is being implemented with 99.3% accuracy score.</p>
+      <br>
+      <h4 class="eda">Technologies: Python, scikit-learn, Flask.</h4>
+      <br>
+      <h4 class="eda">Tool: Google Colab.</h4>
+      <br>
+     <h4 class="eda">EDA: <a href="https://colab.research.google.com/drive/10ANbRpr6bk01O0ZFGGSCnsOFU1dndJ6o" target="blank">
+        click here.</a></h4>
+        <br>
+      <h4 class="eda">Dataset: 
+          <a href="https://drive.google.com/file/d/1ij9Ttjuo50jXKzy83CHLBFOVqdt4TJm7/view?usp=sharing" target="blank">click here.</a></h4>
+  </div>
+  <div class="background">
+   <h2 style="text-align:center" class="aboutme">ABOUT ME</h2>
+   <div class="row">
+     <div class="card">
+     <div class="matter">
+              <h2 class="myname">Prajwal Kale</h2>
+              <p class="title">ML Enthusiast</p>
+              <h3 class="madewith">made with <i class="fa fa-heart heart"></i> in <img src="{{py}}",alt="python" height="30px" width="29px"> , <img src="{{sci}}",alt="sckit" height="32px" width="31px"> , <img src="{{flaski}}",alt="flask" height="41px" width="35px" class="flask"></i></h3>
+              <br>
+              <div class="social">
+              <a href = "mailto:prajwalkale71234@gmail.com?subject =Feedback&body = hello"><i class="fa fa-at mail"></i></a>
+                <a  href = "https://www.linkedin.com/in/prajwal-kale-0590691a2/"><i class="fa fa-linkedin link"></i></a>
+              </div>
+              <br>
+            
+      </div>
+      </div>
+      </div>
+</div>
+</body>
+</html>
+
+
+

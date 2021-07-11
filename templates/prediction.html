@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="{{favicon}}" type="image/png"  sizes="19x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input_Form</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+ 
+  
+  <style>
+  
+    * {box-sizing: border-box;}
+    
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(160, 155, 155);
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+    }
+    
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+    
+    .header-right {
+      float: right;
+    }
+    
+    input[type=number] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      margin-bottom: 20px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .form{
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 30px;
+      margin: 30px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    </style>
+</head>
+<body background="{{bg}}">
+
+  <div class="header">
+    <a href="#default" class="logo">Breast Cancer Prediction</a>
+    <div class="header-right">
+      <a href="/">Home</a>
+      <a class="active"  href="/second">Prediction</a>
+      <a href="/third">About</a>
+    </div>
+  </div>
+
+
+
+  <div class="form">
+    <form action="/submit" method="POST">
+
+      <!-- 1 -->
+      <label >radius_mean</label>
+      <input type="number" placeholder="Enter value in range 6.981 to 28.11" step="any" required name ="radius_mean" />
+    
+  
+      <!-- 2 -->
+      <label for="">texture_mean</label>
+      <input type="number" step="any" required name="texture_mean" placeholder="Enter value in range 9.71 to 39.28">
+
+      <!-- 3 -->
+      <label for="">perimeter_mean</label>
+      <input type="number" step="any" required name="perimeter_mean" placeholder="Enter value in range 43.79 to 188.5">
+
+      <!-- 4 -->
+      <label for="">area_mean</label>
+      <input type="number" step="any" required name="area_mean" placeholder="Enter value in range 143.5 to 2501.0">
+
+      <!-- 5 -->
+      <label for="">smoothness_mean</label>
+      <input type="number" step="any" required name="smoothness_mean" placeholder="Enter value in range 0.052629999999999996 to 0.1634">
+
+      <!-- 6 -->
+      <label for="">compactness_mean</label>
+      <input type="number" step="any" required name="compactness_mean" placeholder="Enter value in range 0.01938 to 0.3454">
+
+      <!-- 7 -->
+      <label for="">concavity_mean</label>
+      <input type="number" step="any" required name="concavity_mean" placeholder="Enter value in range 0.0 to 0.4268">
+
+      
+       <!-- 8 -->
+       <label for="">concave points_mean</label>
+       <input type="number" step="any" required name="concave_points_mean" placeholder="Enter value in range 0.0 to 0.2012">
+
+       <!-- 9 -->
+       <label for="">symmetry_mean</label>
+       <input type="number"  step="any" required name="symmetry_mean" placeholder="Enter value in range 0.106 to 0.304">
+
+       <!-- 10 -->
+       <label for="">fractal_dimension_mean</label>
+       <input type="number" step="any" required name="fractal_dimension_mean" placeholder="Enter value in range 0.049960000000000004 to 0.09744">
+
+       <!-- 11 -->
+       <label for="">radius_se</label>
+       <input type="number" step="any" required name="radius_se" placeholder="Enter value in range 0.1115 to 2.873">
+      
+       <!-- 12 -->
+       <label for="">texture_se</label>
+       <input type="number" step="any" required  name="texture_se" placeholder="Enter value in range 0.3602 to 4.885">
+
+       <!-- 13 -->
+       <label for="">perimeter_se</label>
+       <input type="number" step="any" required name="perimeter_se" placeholder="Enter value in range 0.757 to 21.98">
+
+       <!-- 14 -->
+       <label for="">area_se</label>
+       <input type="number" step="any" required  name="area_se" placeholder="Enter value in range 6.8020000000000005 to 542.2">
+
+      <!-- 15 -->
+      <label for="">smoothness_se</label>
+      <input type="number" step="any" required name="smoothness_se" placeholder="Enter value in range 0.001713 to 0.03113">
+     <!-- 16 -->
+      <label for="">compactness_se</label>
+      <input type="number" step="any" required name="compactness_se" placeholder="Enter value in range 0.002252 to 0.1354">
+      
+      <!-- 17 -->
+      <label for="">concavity_se</label>
+      <input type="number" step="any" required  name="concavity_se" placeholder="Enter value in range 0.0 to 0.396">
+
+      <!-- 18 -->
+      <label for="">concave_points_se</label>
+      <input type="number" step="any" required  name="concave_points_se" placeholder="Enter value in range 0.0 to 0.05279",step="0.01">
+
+      <!-- 19 -->
+      <label for="">symmetry_se</label>
+      <input type="number" step="any" required name="symmetry_se" placeholder="Enter value in range 0.007882 to 0.07895">
+
+      <!-- 20 -->
+      <label for="">fractal_dimension_se</label>
+      <input type="number" step="any" required name="fractal_dimension_se" placeholder="Enter value in range 0.0008948000000000001 to 0.02984">
+
+      <!-- 21 -->
+      <label for="">radius_worst</label>
+      <input type="number" step="any" required  name="radius_worst" placeholder="Enter value in range 7.93 to 36.04">
+
+      <!-- 22 -->
+      <label for="">texture_worst</label>
+      <input type="number" step="any" required name="texture_worst" placeholder="Enter value in range 12.02 to 49.54">
+
+      
+       <!-- 23 -->
+       <label for="">perimeter_worst</label>
+       <input type="number" step="any" required name="perimeter_worst" placeholder="Enter value in range 50.41 to 251.2">
+
+       <!-- 24 -->
+       <label for="">area_worst</label>
+       <input type="number" step="any" required name="area_worst" placeholder="Enter value in range 185.2 to 4254.0">
+
+       <!-- 25 -->
+       <label for="">smoothness_worst</label>
+       <input type="number" step="any" required  name="smoothness_worst" placeholder="Enter value in range 0.07117000000000001 to 0.2226">
+
+       <!-- 26 -->
+       <label for="">compactness_worst</label>
+       <input type="number" step="any" required name="compactness_worst" placeholder="Enter value in range 0.02729 to 1.058">
+      
+       <!-- 27 -->
+       <label for="">concavity_worst</label>
+       <input type="number" step="any" required name="concavity_worst" placeholder="Enter value in range 0.0 to 1.252">
+
+       <!-- 28 -->
+       <label for="">concave points_worst</label>
+       <input type="number" step="any" required name="concave_points_worst" placeholder="Enter value in range 0.0 to 0.29100000000000004">
+
+       <!-- 29 -->
+       <label for="">symmetry_worst</label>
+       <input type="number" step="any" required name="symmetry_worst" placeholder="Enter value in range 0.1565 to 0.6638">
+
+      <!-- 30 -->
+      <label for="">fractal_dimension_worst</label>
+      <input type="number"   step="any" required name="fractal_dimension_worst" placeholder="Enter value in range 0.05504 to 0.2075">
+      
+  
+   
+    
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

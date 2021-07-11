@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="{{favicon}}" type="image/png"  sizes="19x16">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+ 
+<style>
+  
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(160, 155, 155);
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+} 
+
+.body2img{
+  position: relative;
+  background-position: top;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.h3body2{
+  margin-left: 20%;
+  color: #FFFFFF;
+}
+.h1body2{
+  margin-right: 40%;
+  margin-top: 2%;
+  color: #FFFFFF;
+}
+.body2
+{
+  margin-top: 20%;
+background: #000;
+ 
+  opacity: 0.5;
+         margin-top: 2%;
+         display: flex;
+         flex-direction:column;
+         justify-content: center;
+         align-items: center;
+}
+
+/*body*/
+</style>
+
+</head>
+<body>
+
+  <div class="header">
+    <a href="#default" class="logo">Breast Cancer Prediction</a>
+    <div class="header-right">
+      <a class="active" href="/">Home</a>
+      <a href="/second">Prediction</a>
+      <a href="/third">About</a>
+    </div>
+  </div>
+  
+  <div class="about-section">
+    <h1>Breast Cancer predictor</h1>
+    <p>Prediction of Breast Cancer using Machine Learning Algorithm Random Forest classifier with 99.3% accuracy</p>
+    <!-- <p>Using the Breast Cancer Wisconsin (Diagnostic) Dataset,create an classifier that can help diagnose patients and predict of a breast cancer. <br>In this Project, Random Forest classifier is being implemented with 99.3% accuracy.</p> -->
+  </div>
+
+  <div class = body2>
+    <body background = "{{bg}}" background-repeat: no-repeat class="body2img">
+      <h1 class="h1body2">What Is Breast Cancer ?</h1>
+      <h3 class="h3body2">Breast cancer is a type of cancer that starts in the breast. <br>Cancer starts when cells begin to grow out of control.<br>Cancer occurs as a result of mutations, or abnormal changes,<br> in the genes responsible for regulating the growth of cells and keeping them healthy.<br> The genes are in each cell’s nucleus, which acts as the “control room” of each cell. <br>Normally, the cells in our bodies replace themselves through an orderly process of cell <br>growth: healthy new cells take over as old ones die out.But over time, <br>mutations can “turn on” certain genes and “turn off” others in a cell. <br>That changed cell gains the ability to keep dividing without control or order, producing more cells just like it and forming a tumor.
+        <br>A tumor can be benign (not dangerous to health) or malignant (has the potential to be dangerous). <br> Benign tumors are not considered cancerous: their cells are close to normal in appearance, they grow slowly, and they do not invade nearby tissues or spread to other parts of the body. <br> Malignant tumors are cancerous. Left unchecked, malignant cells eventually can spread beyond the original tumor to other parts 
+        of the body.</h3>
+    </body>
+  </div>
+  
+ 
+</body>
+</html>
