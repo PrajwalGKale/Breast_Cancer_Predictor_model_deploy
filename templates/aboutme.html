@@ -107,39 +107,30 @@ html {
   box-sizing: inherit;
 }
 
-.column1 {
-  float: left;
-  width: 20%;
-  display: flex; 
-  justify-content: center; 
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 16px;
-  color: #FFFFFF;
-  padding: 0 8px;
-}
-
-/* .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-} */
-
 
 .card{
      width: 20%;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     position: absolute;
+     margin: 0 auto;
+     display: grid;
+     grid-gap: 1rem;
      background-color: #546A85;
      box-shadow: 2px 2px 20px black;
      border-radius: 5px; 
-     margin-left: 39%;
-     margin-top: 2%;
+     margin-left: auto;
+    margin-right: auto;
+    margin-top: 1pc;
+     /* margin-left: 39%; */
     }
+@media screen and (max-width: 650px) {
+  .card {
+    width: 66%;
+    display: block;
+    
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  
+  
 .matter{
   display: flex;
   justify-content: center;
@@ -153,16 +144,8 @@ html {
   color: white;
 }
 
-/* .container {
-  padding: 0 16px; 
-  background-color: #474e5d;
-} */
 
-/* .container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
+
 
 .title {
   letter-spacing: 2px;
@@ -170,28 +153,6 @@ html {
   color: #D6DBDF;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column1 {
-    width: 100%;
-    display: block;
-  }
-}
 .only4c{
   background-color: #546A85;
 }
