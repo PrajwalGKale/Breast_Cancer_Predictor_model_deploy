@@ -36,7 +36,7 @@ def breast_cancer_model_deployment(radius_m,
         concave_points_worst,
         symmetry_worst,
         fractal_dimension_worst):
-    cancer_data = pd.read_csv('venv\data.csv')
+    cancer_data = pd.read_csv('data.csv')
     cancer_data.drop(['Unnamed: 32', 'id'], axis=1, inplace=True)
     label = LabelEncoder()
     cancer_data['diagnosis'] = label.fit_transform(cancer_data['diagnosis'])
