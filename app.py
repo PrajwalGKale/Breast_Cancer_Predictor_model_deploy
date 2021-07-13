@@ -30,7 +30,7 @@ def third():
     fav = os.path.join(app.config['UPLOAD_FOLDER'],'favicon.png')
     return render_template("aboutme.html",sci = s,flaski =f,py =p,favicon =fav)
 
-@app.route("/submit",methods = ['GET', 'POST'])
+@app.route("/submit",methods = ['POST'])
 def submit():
     #html -> .py
     if request.method == "POST":

@@ -127,28 +127,27 @@
   </div>
 
   <div class = "image">
-      {% if pred == 1 %}
-      <h1>Cancer Type Malignant</h1>  
-      <img src="{{cancer_img}}" alt="Malignant_img">
-      <p><h3>
-        Malignant tumors (has the potential to be dangerous) are cancerous and may be aggressive <br>because they invade and damage surrounding tissue.
-        When a tumor is suspected to be malignant,<br>the doctor will perform a biopsy to determine the severity 
-        <br>or aggressiveness of the tumor.
-      </h3></p>  
-  
-      {%else%}
-      <h1>Cancer Type Benign</h1>
-      <img src="{{cancer_img}}" alt="Benign_img">
-      <p>
-        <h3>
-          When a tumor is diagnosed as benign (not dangerous to health) , doctors will usually leave it alone rather than remove it. 
-          <br>Even though these tumors are not generally aggressive toward surrounding tissue, occasionally 
-          <br>they may continue to grow, pressing on other tissue and causing pain or other problems. 
-          <br>In these situations, the tumor is removed, allowing pain or complications to subside.
-        </h3>
-      </p>
-      
-      {%endif%}
+    {% if pred == 1 %}
+    <h1>Cancer Type Malignant</h1>  
+    <img src="{{cancer_img}}" alt="Malignant_img">
+    <p><h3>
+      Malignant tumors (has the potential to be dangerous) are cancerous and may be aggressive <br>because they invade and damage surrounding tissue.
+      When a tumor is suspected to be malignant,<br>the doctor will perform a biopsy to determine the severity 
+      <br>or aggressiveness of the tumor.
+    </h3></p>  
+
+    {%else%}
+    <h1>Cancer Type Benign</h1>
+    <img src="{{cancer_img}}" alt="Benign_img">
+    <p>
+      <h3>
+        When a tumor is diagnosed as benign (not dangerous to health) , doctors will usually leave it alone rather than remove it. 
+        <br>Even though these tumors are not generally aggressive toward surrounding tissue, occasionally 
+        <br>they may continue to grow, pressing on other tissue and causing pain or other problems. 
+        <br>In these situations, the tumor is removed, allowing pain or complications to subside.
+      </h3>
+    </p>
+    {%endif%}
  </div>
 </body>
 </html>
